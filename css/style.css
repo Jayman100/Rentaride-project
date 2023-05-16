@@ -109,7 +109,7 @@
   width: 115%;
   height: 80%;
   display: block;
-  animation: carmovein 3s ease-in;
+  animation: carmovein 0.8s ease-in;
 }
 
 .hero-link-box {
