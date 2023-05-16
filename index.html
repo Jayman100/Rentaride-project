@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/query.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+
+    <title>Rent a ride</title>
+  </head>
+  <body>
+    <header class="header">
+      <p class="footer-logo-box">RentARide</p>
+      <nav class="header-nav-box">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link home">Home</a></li>
+          <li><a href="#" class="nav-link">Rental deals</a></li>
+          <li><a href="#" class="nav-link">Why choose us</a></li>
+          <li><a href="#" class="nav-link">How it works</a></li>
+          <div class="nav-rule"></div>
+          <li><a href="#" class="nav-link sign-up">Sign up</a></li>
+          <li><a href="#" class="nav-link sign-in">sign-in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Find, book and rent a car in <span>Easy</span> steps.
+            </h1>
+
+            <p class="heading-sub">
+              At any time you desire, you can safely acquire a car without
+              experiencing any form of hassle.
+            </p>
+
+            <div class="hero-link-box">
+              <a href="#" class="hero-link">
+                <img src="img/apple.png" alt="apple logo" />
+                <p class="hero-link-text">
+                  Download on the <span>App Store</span>
+                </p>
+              </a>
+              <a href="#" class="hero-link">
+                <img src="img/playstore.png" alt="Google playstore logo" />
+                <p class="hero-link-text">
+                  Download on the <span>Google Play</span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img src="img/benz-car-high.png" alt="benz car" />
+          </div>
+        </div>
+        <form class="itinerary-box">
+          <div class="brind-box">
+            <label for="brand" class="brand-label">Car Brand</label>
+            <input id="brand" type="search" placeholder="Brand name" />
+          </div>
+
+          <div class="itinerary-rule"></div>
+
+          <div class="location-box">
+            <label for="location" class="location-label">Location</label>
+            <input
+              id="location"
+              type="search"
+              placeholder="Search your location"
+            />
+          </div>
+
+          <div class="itinerary-rule"></div>
+
+          <div class="pick-date-box">
+            <label for="pick-date" class="pick-date-label">Pickup Date</label>
+            <select name="pick-up-date" id="pick-date">
+              <option value="">Select date</option>
+            </select>
+          </div>
+
+          <div class="itinerary-rule"></div>
+
+          <div class="return-date-box">
+            <label for="return-date" class="return-date-label"
+              >Return Date</label
+            >
+            <select name="Return-date" id="return-date">
+              <option value="">Select date</option>
+            </select>
+          </div>
+
+          <button class="itinerary-btn btn">Search</button>
+        </form>
+      </section>
+
+      <section class="section-feature-in-how">
+        <div class="feature-in-logo">
+          <img src="img/Nissan_Logo_2020.svg" alt="nissan logo" />
+          <img src="img/mazda-high.png" alt="mazda logo" />
+          <img src="img/lexus.png" alt="lexus logo" />
+          <img src="img/benz-high.png" alt="benz logo" />
+          <img src="img/bmw-high.png" alt="bmw logo" />
+          <img src="img/honda-png-logo-32834.png" alt="honda logo" />
+          <img src="img/ford-high.png" alt="ford logo" />
+        </div>
+
+        <div class="how">
+          <header class="how-header">
+            <h2 class="heading-secondary">How it works</h2>
+            <h3 class="heading-tertiary">
+              Rent a car with the following 3 steps
+            </h3>
+          </header>
+          <main class="how-main">
+            <div class="how-location-box">
+              <ion-icon name="location" class="icon location-icon"></ion-icon>
+
+              <div class="text-box">
+                <p class="text-heading">Choose location</p>
+
+                <p class="text-description">
+                  Choose your location and find best car
+                </p>
+              </div>
+            </div>
+
+            <div class="date-box">
+              <ion-icon
+                name="calendar-outline"
+                class="icon calender-icon"
+              ></ion-icon>
+
+              <div class="text-box">
+                <p class="text-heading">Pick-up date</p>
+
+                <p class="text-description">
+                  Select a pick-up date and time to book your car
+                </p>
+              </div>
+            </div>
+
+            <div class="car-box">
+              <ion-icon name="car" class="icon car-icon"></ion-icon>
+
+              <div class="text-box">
+                <p class="text-heading">Book your car</p>
+
+                <p class="text-description">
+                  Book your car and we will deliver it promptly
+                </p>
+              </div>
+            </div>
+            <div class="how-curve curve-1">&nbsp;</div>
+            <div class="how-curve curve-2">&nbsp;</div>
+          </main>
+        </div>
+      </section>
+
+      <section class="section-why">
+        <div class="container-why why-flex">
+          <div class="why-img-box">
+            <img src="img/toyota.png" alt="" class="why-img" />
+          </div>
+          <div class="why-text-box">
+            <h2 class="heading-secondary">Why choose us</h2>
+            <h3 class="heading-tertiary margin-bottom-medium why-font-size">
+              Experience excellence with our rental deals.
+            </h3>
+
+            <ul>
+              <li class="why-list">
+                <div class="why-icon">
+                  <ion-icon name="clipboard-outline"></ion-icon>
+                </div>
+                <div class="why-text">
+                  <p class="why-list-heading">Flexible Rental Periods</p>
+                  <p class="why-list-description">
+                    We offer flexible rental periods, from daily to monthly
+                    rentals so you can choose the one that suits you.
+                  </p>
+                </div>
+              </li>
+              <li class="why-list">
+                <div class="why-icon">
+                  <ion-icon class="pricetags-icon" name="pricetags"></ion-icon>
+                </div>
+                <div class="why-text">
+                  <p class="why-list-heading">Competitive Pricing</p>
+                  <p class="why-list-description">
+                    We offer affordable and flexible pricing plans that are
+                    designed to meet your budget.
+                  </p>
+                </div>
+              </li>
+              <li class="why-list">
+                <div class="why-icon"><ion-icon name="people"></ion-icon></div>
+                <div class="why-text">
+                  <p class="why-list-heading">Drivers Available</p>
+                  <p class="why-list-description">
+                    We also provide drivers if you don't want to drive to enable
+                    you have a seamless experience with us.
+                  </p>
+                </div>
+              </li>
+              <li class="why-list">
+                <div class="why-icon"><ion-icon name="headset"></ion-icon></div>
+                <div class="why-text">
+                  <p class="why-list-heading">Superior Customer Service</p>
+                  <p class="why-list-description">
+                    A team of knowledgeable and friendly professionals ready to
+                    support you with your concerns 24/7.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-car-card">
+        <div class="section-car-card-container center-text">
+          <div class="car-card-heading margin-bottom-small">
+            <h2 class="heading-secondary">Popular rentals deals</h2>
+
+            <h3 class="heading-tertiary">The rental deals people choose</h3>
+          </div>
+
+          <div class="car-card-main margin-bottom-medium">
+            <div class="car-cards">
+              <div class="card-side-front">
+                <div class="car-card-img-box margin-bottom-small">
+                  <img
+                    src="img/mercedes-benz.png"
+                    alt="mercedes-benz"
+                    class="car-card-img"
+                  />
+                </div>
+                <h4 class="car-card-name-box car-card-name-box-1">
+                  <span class="car-card-name">Mercedes-Benz 2019</span>
+                </h4>
+
+                <div class="car-card-rating">
+                  <ion-icon class="car-card-star" name="star"></ion-icon>
+                  <p class="car-card-rating-text">
+                    4.7 <span>[97 reviews]</span>
+                  </p>
+                </div>
+
+                <div class="car-description margin-bottom-small">
+                  <div class="car-flex car-capacity">
+                    <ion-icon class="car-card-icon" name="person"></ion-icon>
+                    <p class="car-description-text">4 Passengers</p>
+                  </div>
+                  <div class="car-flex car-mode">
+                    <ion-icon
+                      class="car-card-icon"
+                      name="add-circle-outline"
+                    ></ion-icon>
+                    <p class="car-description-text">Automatic</p>
+                  </div>
+                  <div class="car-flex car-conditioning">
+                    <ion-icon
+                      class="car-card-icon"
+                      name="snow-outline"
+                    ></ion-icon>
+                    <p class="car-description-text">Air Conditioning</p>
+                  </div>
+                  <div class="car-flex car-door">
+                    <ion-icon class="car-card-icon" name="person"></ion-icon>
+                    <p class="car-description-text">4 Doors</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-side-back">
+                <div class="card-side-back-text">
+                  <p class="car-card-price margin-bottom-big">
+                    N80,000<span>/day</span>
+                  </p>
+
+                  <a href="#" class="car-card-link car-card-link-rent"
+                    >Rent Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="car-cards">
+              <div class="card-side-front">
+                <div class="car-card-img-box margin-bottom-small">
+                  <img
+                    src="img/ford-focus.png"
+                    alt="ford focus"
+                    class="car-card-img"
+                  />
+                </div>
+
+                <h4 class="car-card-name-box car-card-name-box-2">
+                  <span class="car-card-name">Ford Focus</span>
+                </h4>
+
+                <div class="car-card-rating">
+                  <ion-icon class="car-card-star" name="star"></ion-icon>
+                  <p class="car-card-rating-text">
+                    4.8 <span>[100+ reviews]</span>
+                  </p>
+                </div>
+
+                <div class="car-description margin-bottom-small">
+                  <div class="car-flex car-capacity">
+                    <ion-icon class="car-card-icon" name="person"></ion-icon>
+                    <p class="car-description-text">4 Passengers</p>
+                  </div>
+                  <div class="car-flex car-mode">
+                    <ion-icon
+                      class="car-card-icon"
+                      name="git-branch-outline"
+                    ></ion-icon>
+                    <p class="car-description-text">Manual</p>
+                  </div>
+                  <div class="car-flex car-conditioning">
+                    <ion-icon
+                      class="car-card-icon"
+                      name="snow-outline"
+                    ></ion-icon>
+                    <p class="car-description-text">Air Conditioning</p>
+                  </div>
+                  <div class="car-flex car-door">
+                    <ion-icon class="car-card-icon" name="person"></ion-icon>
+                    <p class="car-description-text">4 Doors</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-side-back">
+                <div class="card-side-back-text">
+                  <p class="car-card-price margin-bottom-big">
+                    N80,000<span>/day</span>
+                  </p>
+
+                  <a href="#" class="car-card-link car-card-link-rent"
+                    >Rent Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="car-cards">
+              <div class="card-side-front">
+                <div class="car-card-img-box margin-bottom-small">
+                  <img
+                    src="img/Lexus PNG.png"
+                    alt="ford focus"
+                    class="car-card-img"
+                  />
+                </div>
+                <h4 class="car-card-name-box car-card-name-box-3">
+                  <span class="car-card-name">2003 Ford Mustang Mach 1</span>
+                </h4>
+
+                <div class="car-card-rating">
+                  <ion-icon class="car-card-star" name="star"></ion-icon>
+                  <p class="car-card-rating-text">
+                    4.8 <span>[100+ reviews]</span>
+                  </p>
+                </div>
+
+                <div class="car-description margin-bottom-small">
+                  <div class="car-flex car-capacity">
+                    <ion-icon class="car-card-icon" name="person"></ion-icon>
+                    <p class="car-description-text">4 Passengers</p>
+                  </div>
+                  <div class="car-flex car-mode">
+                    <ion-icon
+                      class="car-card-icon"
+                      name="git-branch-outline"
+                    ></ion-icon>
+                    <p class="car-description-text">Manual</p>
+                  </div>
+                  <div class="car-flex car-conditioning">
+                    <ion-icon
+                      class="car-card-icon"
+                      name="snow-outline"
+                    ></ion-icon>
+                    <p class="car-description-text">Air Conditioning</p>
+                  </div>
+                  <div class="car-flex car-door">
+                    <ion-icon class="car-card-icon" name="person"></ion-icon>
+                    <p class="car-description-text">2 Doors</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-side-back">
+                <div class="card-side-back-text">
+                  <p class="car-card-price margin-bottom-big">
+                    N80,000<span>/day</span>
+                  </p>
+
+                  <a href="#" class="car-card-link car-card-link-rent"
+                    >Rent Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="car-cards">
+              <div class="card-side-front">
+                <div class="car-card-img-box margin-bottom-small">
+                  <img src="img/porche.png" alt="porche" class="car-card-img" />
+                </div>
+                <h4 class="car-card-name-box car-card-name-box-4">
+                  <span class="car-card-name">Porche 911</span>
+                </h4>
+
+                <div class="car-card-rating">
+                  <ion-icon class="car-card-star" name="star"></ion-icon>
+                  <p class="car-card-rating-text">
+                    4.5 <span>[76 reviews]</span>
+                  </p>
+                </div>
+
+                <div class="car-description">
+                  <div class="car-flex car-capacity">
+                    <ion-icon class="car-card-icon" name="person"></ion-icon>
+                    <p class="car-description-text">4 Passengers</p>
+                  </div>
+                  <div class="car-flex car-mode">
+                    <ion-icon
+                      class="car-card-icon"
+                      name="add-circle-outline"
+                    ></ion-icon>
+                    <p class="car-description-text">Automatic</p>
+                  </div>
+                  <div class="car-flex car-conditioning">
+                    <ion-icon
+                      class="car-card-icon"
+                      name="snow-outline"
+                    ></ion-icon>
+                    <p class="car-description-text">Air Conditioning</p>
+                  </div>
+                  <div class="car-flex car-door">
+                    <ion-icon class="car-card-icon" name="person"></ion-icon>
+                    <p class="car-description-text">2 Doors</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-side-back">
+                <div class="card-side-back-text">
+                  <p class="car-card-price margin-bottom-big">
+                    N80,000<span>/day</span>
+                  </p>
+
+                  <a href="#" class="car-card-link car-card-link-rent"
+                    >Rent Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="car-card-link"
+            ><span>See All vehicles</span>
+            <ion-icon
+              class="car-card-link-icon"
+              name="arrow-forward-outline"
+            ></ion-icon
+          ></a>
+        </div>
+      </section>
+
+      <section class="section-testimonial">
+        <div class="container center-text">
+          <div class="testimonial-heading center-text margin-bottom-medium">
+            <h2 class="heading-secondary">Testimonials</h2>
+            <h3 class="heading-tertiary">
+              What do our customers says about us?
+            </h3>
+          </div>
+
+          <div class="testimonial-main">
+            <div class="testimonials">
+              <div class="testimonial-img-box testimonial-img-box-1"></div>
+              <div class="car-card-star testimonial-stars">
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+              </div>
+              <p class="testimonial-text margin-bottom-small">
+                "The car was really affordable. I requested for a driver, the
+                driver was really helpful and polite, the car was clean,
+                comfortable and worked fine. I had a great experience using
+                their ride.I will definately refer my friends"
+              </p>
+
+              <p class="author-name">Brittney Barrett</p>
+              <p class="author-job">Co-founder at Kinside</p>
+            </div>
+            <div class="testimonials">
+              <div class="testimonial-img-box testimonial-img-box-2"></div>
+              <div class="car-card-star testimonial-stars">
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+              </div>
+              <p class="testimonial-text margin-bottom-small">
+                "The car was really affordable. I requested for a driver, the
+                driver was really helpful and polite, the car was clean,
+                comfortable and worked fine. I had a great experience using
+                their ride.I will definately refer my friends"
+              </p>
+
+              <p class="author-name">Jacob Jones</p>
+              <p class="author-job">Head of Sales at Drawboard</p>
+            </div>
+            <div class="testimonials">
+              <div class="testimonial-img-box testimonial-img-box-3"></div>
+              <div class="car-card-star testimonial-stars">
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                <ion-icon class="testimonial-icon" name="star"></ion-icon>
+              </div>
+              <p class="testimonial-text margin-bottom-small">
+                "The car was really affordable. I requested for a driver, the
+                driver was really helpful and polite, the car was clean,
+                comfortable and worked fine. I had a great experience using
+                their ride.I will definately refer my friends"
+              </p>
+
+              <p class="author-name">Sharon Patil</p>
+              <p class="author-job">
+                Head of business Development at Labiotech
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta-container">
+            <div class="cta-text-box">
+              <p class="cta-heading">Download RentARide App for free</p>
+
+              <p class="cta-sub-heading">
+                For faster bookings and exclusive deals.
+              </p>
+
+              <div class="hero-link-box">
+                <a href="#" class="hero-link">
+                  <img src="img/apple.png" alt="apple logo" />
+                  <p class="hero-link-text">
+                    Download on the <span>App Store</span>
+                  </p>
+                </a>
+                <a href="#" class="hero-link">
+                  <img src="img/playstore.png" alt="Google playstore logo" />
+                  <p class="hero-link-text">
+                    Download on the <span>Google Play</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="circle-box">&nbsp;</div>
+            <div class="cta-img-box"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-subscribe">
+        <div class="sub-container center-text">
+          <p class="subscribe-heading margin-bottom-medium">
+            Subscribe For Any New Updates From RentARide
+          </p>
+
+          <form action="#" class="sub-form">
+            <input
+              type="email"
+              class="sub-input margin-bottom-small"
+              placeholder="Enter Your Email"
+            />
+
+            <button class="btn sub-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer">
+      <div class="container footer-grid">
+        <div class="contact-box">
+          <p class="footer-logo-box">RentARide</p>
+          <address class="contact-address">
+            36c, olohunda street,ilorin, kwara, Nigeria
+          </address>
+          <div class="contacts">
+            <a href="mailto:garbajamiu2000@gmail.com" class="contact-link"
+              ><ion-icon name="mail"></ion-icon
+            ></a>
+            <a href="tel:+2348103147269" class="contact-link"
+              ><ion-icon name="call"></ion-icon
+            ></a>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <p class="footer-heading">Our Services</p>
+          <ul class="footer-list-box">
+            <li><a href="#" class="footer-link">Car</a></li>
+            <li><a href="#" class="footer-link">Career</a></li>
+            <li><a href="#" class="footer-link">Packages</a></li>
+            <li><a href="#" class="footer-link">Prices</a></li>
+            <li><a href="#" class="footer-link">Safety</a></li>
+          </ul>
+        </div>
+        <div class="support-box">
+          <p class="footer-heading">Support</p>
+          <ul class="footer-list-box">
+            <li><a href="#" class="footer-link">Download</a></li>
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">Partner With Us</a></li>
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="about-box">
+          <p class="footer-heading">About RentARide</p>
+          <ul class="footer-list-box">
+            <li><a href="#" class="footer-link">Our Story</a></li>
+            <li><a href="#" class="footer-link">Why Choose Us</a></li>
+            <li><a href="#" class="footer-link">Advertise</a></li>
+          </ul>
+        </div>
+        <div class="social-box">
+          <p class="footer-heading">Follow Us</p>
+          <ul class="footer-social-list-box">
+            <li>
+              <a
+                href="https://twitter.com/jayman_dev"
+                class="social-logo-link"
+                target="_blank"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://web.facebook.com/profile.php?id=100039233617402"
+                class="social-logo-link"
+                target="_blank"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/jayman_ex/"
+                class="social-logo-link"
+                target="_blank"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-logo-link" target="_blank"
+                ><ion-icon name="logo-whatsapp"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
