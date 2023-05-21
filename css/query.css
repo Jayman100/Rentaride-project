@@ -37,10 +37,6 @@
 }
 
 @media (max-width: 70em) {
-  /* .header {
-    display: flex;
-    justify-content: center;
-  } */
   .header .header-container {
     padding: 0;
     max-width: 90%;
@@ -194,7 +190,7 @@
     font-size: 5rem;
     font-weight: 700;
     position: absolute;
-    left: 4rem;
+    left: 1rem;
     color: #cccce6;
   }
 
@@ -260,10 +256,59 @@
     column-gap: 2rem;
   }
 
+  .hero .hero-img-box img {
+    transform: translateY(-3rem);
+    animation: none;
+  }
+
+  .hero-text-box .heading-primary {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text-box .heading-sub {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
   .itinerary-btn {
     width: 100%;
   }
 
+  .section-feature-in-how .how {
+    width: 80%;
+  }
+
+  .section-feature-in-how .feature-in-logo img {
+    height: 2rem;
+  }
+
+  .why-text-box .heading-tertiary.why-font-size {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .why-text .why-list-heading {
+    font-size: 1.5rem;
+  }
+
+  .why-text .why-list-description {
+    font-size: 1.2rem;
+  }
+
+  .why-list .why-icon {
+    height: 4rem;
+    flex-basis: 4rem;
+    font-size: 2rem;
+  }
+
+  .container-why .why-text-box ul {
+    width: 100%;
+  }
+
+  body .heading-tertiary {
+    font-size: 2rem;
+  }
   .section-car-card-container {
     width: 30rem;
   }
@@ -282,15 +327,60 @@
     width: 100%;
   }
 
+  .section-cta .cta-container {
+    padding: 2rem 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .cta-container .cta-img-box {
+    display: none;
+  }
+
+  .cta-container .cta-text-box {
+    width: 100%;
+  }
+
+  .cta-text-box .cta-link-box {
+    width: 90%;
+  }
+
+  .cta-text-box .cta-link-box .hero-link {
+    padding: 1rem 1rem;
+  }
+  .circle-box {
+    display: none;
+  }
+
   .section-subscribe .sub-container {
     padding: 4rem 4rem;
   }
 
   .sub-container .subscribe-heading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .sub-form .btn.sub-btn {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
   }
 
   .section-footer .footer-grid {
-    grid-template-columns: 1.5fr repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-box .footer-logo-box {
+    font-size: 2.5rem;
+  }
+
+  .contact-box .contact-address {
+    font-size: 1.4rem;
+  }
+
+  .footer-grid .footer-heading {
+    font-size: 1.5rem;
+  }
+
+  .footer-grid .footer-list-box {
+    font-size: 1.7rem;
   }
 }
