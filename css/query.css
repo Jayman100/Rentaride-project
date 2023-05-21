@@ -263,7 +263,9 @@
 
   .hero-text-box .heading-primary {
     font-size: 4rem;
-    margin-bottom: 1rem;
+    line-height: 1.2;
+    letter-spacing: -0.75px;
+    margin-bottom: 2rem;
   }
 
   .hero-text-box .heading-sub {
