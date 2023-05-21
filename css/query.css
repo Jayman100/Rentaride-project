@@ -1,9 +1,296 @@
-/*  
-DEVICE SIZES 
+@media (max-width: 80em) {
+  .hero-text-box .heading-primary {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
 
-max-width: 84em ( for smaller laptop)
-max-width: 75em ( for landscape tablets)
-max-width: 59emem ( for for tablets- mobile nav start)
-max-width: 34em ( for phones)
+  .hero-text-box .heading-sub {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 
-*/
+  .section-hero .itinerary-box {
+    width: 100rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .main .section-hero {
+    padding-top: 12rem;
+  }
+
+  .header-nav-box .nav-list {
+    gap: 1rem;
+  }
+
+  .hero-text-box .hero-link-box {
+    margin-bottom: 4rem;
+  }
+
+  .cta-text-box .cta-heading {
+    font-size: 3rem;
+  }
+
+  .cta-text-box .cta-sub-heading {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 70em) {
+  /* .header {
+    display: flex;
+    justify-content: center;
+  } */
+  .header .header-container {
+    padding: 0;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .header-nav-box {
+    background-color: #cccce6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 200%;
+    z-index: 99999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .header #nav-input:checked ~ .header-nav-box {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header #nav-input:checked + .menu-icon {
+    display: none;
+  }
+
+  .header #nav-input:checked ~ .close-icon {
+    display: block;
+    z-index: 999999;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .nav-rule {
+    display: none;
+  }
+
+  .header .menu-icon {
+    display: block;
+  }
+
+  .main .section-hero {
+    padding: 0;
+  }
+
+  .main .section-hero {
+    padding-top: 10rem;
+  }
+
+  .section-hero .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0;
+  }
+  .hero-text-box {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .hero .hero-img-box img {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero-text-box .hero-link-box {
+    margin-bottom: 0;
+  }
+  .section-hero .itinerary-box {
+    max-width: 50rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10rem;
+    padding: 2rem 3rem;
+  }
+
+  .brand-box,
+  .location-box,
+  .pick-date-box {
+    grid-column: 1/ -1;
+  }
+
+  .section-hero .itinerary-box select,
+  .section-hero .itinerary-box input {
+    width: 100%;
+  }
+
+  .itinerary-btn {
+    align-self: end;
+    width: 60%;
+    justify-self: center;
+  }
+
+  .hero-link-box {
+    justify-content: center;
+  }
+
+  .itinerary-rule {
+    display: none;
+  }
+
+  .main .section-feature-in-how {
+    padding-top: 30rem;
+  }
+
+  .section-car-card-container {
+    width: 60rem;
+  }
+
+  .section-car-card-container .car-card-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .cta-text-box .cta-link-box {
+    justify-content: start;
+  }
+
+  .section-footer .footer-grid {
+    gap: 0.9rem;
+  }
+}
+
+@media (max-width: 61em) {
+  .how .how-main {
+    width: 80%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+
+  .how-main .how-curve {
+    display: none;
+  }
+
+  .how-location-box::before,
+  .date-box::before,
+  .car-box::before {
+    font-size: 5rem;
+    font-weight: 700;
+    position: absolute;
+    left: 4rem;
+    color: #cccce6;
+  }
+
+  .how-location-box::before {
+    content: "1.";
+  }
+
+  .date-box::before {
+    content: "2.";
+  }
+
+  .car-box::before {
+    content: "3.";
+  }
+
+  .section-why .why-flex {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .why-img-box {
+    display: none;
+  }
+
+  .testimonial-container .testimonial-main {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+  }
+
+  .testimonial-main .sharon {
+    grid-column: 1 / -1;
+    align-self: center;
+    justify-self: center;
+    width: 60%;
+  }
+
+  .section-cta .cta-container {
+    padding-left: 5rem;
+  }
+
+  .cta-container .cta-text-box {
+    width: 100%;
+  }
+
+  .section-subscribe .sub-container {
+    width: 80%;
+  }
+
+  .sub-container .subscribe-heading {
+    font-size: 2rem;
+  }
+
+  .section-footer .footer-grid {
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    row-gap: 3rem;
+  }
+}
+
+@media (max-width: 37em) {
+  .section-hero .itinerary-box {
+    max-width: 30rem;
+    column-gap: 2rem;
+  }
+
+  .itinerary-btn {
+    width: 100%;
+  }
+
+  .section-car-card-container {
+    width: 30rem;
+  }
+
+  .section-car-card-container .car-card-main {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .testimonial-container .testimonial-main {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+
+  .testimonial-main .sharon {
+    width: 100%;
+  }
+
+  .section-subscribe .sub-container {
+    padding: 4rem 4rem;
+  }
+
+  .sub-container .subscribe-heading {
+    font-size: 1.5rem;
+  }
+
+  .section-footer .footer-grid {
+    grid-template-columns: 1.5fr repeat(2, 1fr);
+  }
+}

@@ -18,24 +18,30 @@
 
     <title>Rent a ride</title>
   </head>
-  <body>
+  <body id="close-popup">
     <header class="header">
+      <div class="header-container">  
       <p class="footer-logo-box">RentARide</p>
+      <input id="nav-input" type="checkbox">
+      <label class="menu-icon" for="nav-input"><ion-icon name="menu-outline"></ion-icon></label>
+      <label class="close-icon" for="nav-input"><ion-icon name="close-outline"></ion-icon></label>
       <nav class="header-nav-box">
         <ul class="nav-list">
-          <li><a href="#" class="nav-link home">Home</a></li>
-          <li><a href="#" class="nav-link">Rental deals</a></li>
-          <li><a href="#" class="nav-link">Why choose us</a></li>
-          <li><a href="#" class="nav-link">How it works</a></li>
+          <li><a href="#home" class="nav-link home">Home</a></li>
+          <li><a href="#rental-deals" class="nav-link">Rental deals</a></li>
+          <li><a href="#why" class="nav-link">Why choose us</a></li>
+          <li><a href="#how" class="nav-link">How it works</a></li>
           <div class="nav-rule"></div>
-          <li><a href="#" class="nav-link sign-up">Sign up</a></li>
-          <li><a href="#" class="nav-link sign-in">sign-in</a></li>
+          <li><a href="#popup" class="nav-link sign-up">Sign up</a></li>
+          <li><a href="#popup" class="nav-link sign-in">sign-in</a></li>
         </ul>
       </nav>
+
+     </div>
     </header>
 
     <main class="main">
-      <section class="section-hero">
+      <section id="home" class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">
@@ -67,7 +73,7 @@
           </div>
         </div>
         <form class="itinerary-box">
-          <div class="brind-box">
+          <div class="brand-box">
             <label for="brand" class="brand-label">Car Brand</label>
             <input id="brand" type="search" placeholder="Brand name" />
           </div>
@@ -107,7 +113,7 @@
         </form>
       </section>
 
-      <section class="section-feature-in-how">
+      <section id="how" class="section-feature-in-how">
         <div class="feature-in-logo">
           <img src="img/Nissan_Logo_2020.svg" alt="nissan logo" />
           <img src="img/mazda-high.png" alt="mazda logo" />
@@ -170,7 +176,7 @@
         </div>
       </section>
 
-      <section class="section-why">
+      <section id="why" class="section-why">
         <div class="container-why why-flex">
           <div class="why-img-box">
             <img src="img/toyota.png" alt="" class="why-img" />
@@ -231,7 +237,7 @@
         </div>
       </section>
 
-      <section class="section-car-card">
+      <section id="rental-deals" class="section-car-card">
         <div class="section-car-card-container center-text">
           <div class="car-card-heading margin-bottom-small">
             <h2 class="heading-secondary">Popular rentals deals</h2>
@@ -359,13 +365,13 @@
               <div class="card-side-front">
                 <div class="car-card-img-box margin-bottom-small">
                   <img
-                    src="img/toyota.png"
+                    src="img/bmw car.png"
                     alt="ford focus"
-                    class="car-card-img"
+                    class="bmw-car-img"
                   />
                 </div>
                 <h4 class="car-card-name-box car-card-name-box-3">
-                  <span class="car-card-name">Toyota Fortuner</span>
+                  <span class="car-card-name">bmw 2019</span>
                 </h4>
 
                 <div class="car-card-rating">
@@ -403,7 +409,7 @@
               <div class="card-side-back">
                 <div class="card-side-back-text">
                   <p class="car-card-price margin-bottom-big">
-                    N60,000<span>/day</span>
+                    N50,000<span>/day</span>
                   </p>
 
                   <a href="#" class="car-card-link car-card-link-rent"
@@ -456,7 +462,7 @@
               <div class="card-side-back">
                 <div class="card-side-back-text">
                   <p class="car-card-price margin-bottom-big">
-                    N50,000<span>/day</span>
+                    N100,000<span>/day</span>
                   </p>
 
                   <a href="#" class="car-card-link car-card-link-rent"
@@ -478,7 +484,7 @@
       </section>
 
       <section class="section-testimonial">
-        <div class="container center-text">
+        <div class="testimonial-container center-text">
           <div class="testimonial-heading center-text margin-bottom-medium">
             <h2 class="heading-secondary">Testimonials</h2>
             <h3 class="heading-tertiary">
@@ -525,7 +531,7 @@
               <p class="author-name">Jacob Jones</p>
               <p class="author-job">Head of Sales at Drawboard</p>
             </div>
-            <div class="testimonials">
+            <div class="testimonials sharon">
               <div class="testimonial-img-box testimonial-img-box-3"></div>
               <div class="car-card-star testimonial-stars">
                 <ion-icon class="testimonial-icon" name="star"></ion-icon>
@@ -551,7 +557,6 @@
       </section>
 
       <section class="section-cta">
-        <div class="container">
           <div class="cta-container">
             <div class="cta-text-box">
               <p class="cta-heading">Download RentARide App for free</p>
@@ -560,7 +565,7 @@
                 For faster bookings and exclusive deals.
               </p>
 
-              <div class="hero-link-box">
+              <div class="hero-link-box cta-link-box">
                 <a href="#" class="hero-link">
                   <img src="img/apple.png" alt="apple logo" />
                   <p class="hero-link-text">
@@ -578,7 +583,6 @@
             <div class="circle-box">&nbsp;</div>
             <div class="cta-img-box"></div>
           </div>
-        </div>
       </section>
 
       <section class="section-subscribe">
@@ -601,7 +605,7 @@
     </main>
 
     <footer class="section-footer">
-      <div class="container footer-grid">
+      <div class="footer-grid">
         <div class="contact-box">
           <p class="footer-logo-box">RentARide</p>
           <address class="contact-address">
@@ -681,6 +685,58 @@
         </div>
       </div>
     </footer>
+
+    <section class="section-popup" id="popup">
+      <div class="section-popup-container">
+        <a class="close-popup" href="#close-popup"
+          ><ion-icon name="close-outline"></ion-icon
+        ></a>
+        <div class="popup-text-container">
+          <p class="popup-heading">Sign In / Register</p>
+          <p class="popup-heading-sub margin-bottom-small">
+            Manage your rents with ease and enjoy member only benefits.
+          </p>
+
+          <form action="submit" class="popup-form margin-bottom-small">
+            <input
+              type="email"
+              class="popup-input"
+              placeholder="Please enter an email address"
+              required
+            />
+
+            <button class="popup-btn btn">Continue</button>
+          </form>
+
+          <div class="more-sign-methods">
+            <div class="dash"></div>
+            <p class="more-sign-method-text">More Sign In Methods</p>
+            <div class="dash"></div>
+          </div>
+
+          <div class="more-sign-method-img-box">
+            <a href="#" 
+              ><img class="more-sign-method-img" src="img/facebook-logo.png" alt="facebook-logo"
+            /></a>
+            <a href="#" 
+              ><img class="more-sign-method-img  google-logo" src="img/google-logo.png" alt="google-logo"
+            /></a>
+            <a href="#"
+              ><img class="more-sign-method-img" src="img/wechat-logo.png" alt="wechat-logo"
+            /></a>
+            <a href="#" "
+              ><img class="more-sign-method-img" src="img/twitter-logo.png" alt="twitter-logo"
+            /></a>
+          </div>
+
+          <p class="terms">
+            By signing in or registering, you are deemed to have agreed to the
+            RentARide <a href="#">Terms and Conditions</a> and
+            <a href="#">Privacy Statement</a>.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <script
       type="module"

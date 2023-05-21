@@ -2,6 +2,12 @@
 
 .header {
   background-color: #cccce6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+.header-container {
   padding: 0 8.3rem;
   height: 9.6rem;
   display: flex;
@@ -13,7 +19,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .nav-link:link,
@@ -21,7 +27,29 @@
   display: inline-block;
   text-decoration: none;
   color: #555;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: all 0.8s ease;
 }
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: navy !important;
+  color: #fff !important;
+}
+
+/* .nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: red;
+  transition: all 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+} */
 
 .nav-link.home {
   color: #000;
@@ -42,13 +70,21 @@
 .nav-link.sign-in {
   background-color: navy;
   color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 8px;
 }
 
 .btn.itinerary-btn:hover,
 .nav-link.sign-in:hover {
-  background-color: #000073;
+  background-color: #000073 !important;
+}
+
+#nav-input {
+  display: none;
+}
+
+.close-icon,
+.menu-icon {
+  font-size: 5rem;
+  display: none;
 }
 
 /* HERO SECTION */
@@ -56,6 +92,8 @@
 .section-hero {
   background-color: #cccce6;
   padding-left: 8.3rem;
+  overflow-x: hidden;
+  padding-top: 5rem;
 }
 
 .hero {
@@ -216,7 +254,7 @@
 }
 
 .feature-in-logo {
-  max-width: 120rem;
+  max-width: 85%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -324,7 +362,7 @@
 }
 
 .container-why {
-  max-width: 130rem;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -492,6 +530,12 @@
   transform: translate(-50%, -50%);
 }
 
+.bmw-car-img {
+  display: block;
+  width: 100%;
+  transform: rotateY(-180deg);
+}
+
 .car-card-name-box {
   color: #fff;
   position: absolute;
@@ -506,6 +550,10 @@
 
 .car-card-name-box-1 {
   width: 60%;
+}
+
+.car-card-name-box-3 {
+  width: 28%;
 }
 
 .car-card-name-box-4,
@@ -575,11 +623,13 @@
 
 .car-card-price {
   font-size: 2rem;
+  font-weight: 600;
   color: #fff;
 }
 
 .car-card-price span {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
+  color: #e6e6f2;
 }
 
 .car-card-link-rent:link,
@@ -595,8 +645,14 @@
   padding: 4.8rem 0;
 }
 
+.testimonial-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .testimonial-main {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2rem;
   padding: 3rem;
@@ -670,12 +726,15 @@
 }
 
 .cta-container {
+  width: 90%;
+  margin: 0 auto;
   padding: 3rem 8rem 1rem;
   background-color: #333399;
   border-radius: 12px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
+  overflow: hidden;
 }
 
 .cta-text-box {
@@ -794,6 +853,8 @@
 }
 
 .footer-grid {
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1.5fr repeat(4, 1fr);
   gap: 1rem;
@@ -869,4 +930,159 @@
   font-size: 2.5rem;
   border-radius: 8px;
   text-align: center;
+}
+
+/* SECTION POP UP */
+
+.section-popup {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 9999999;
+}
+
+.section-popup-container {
+  height: 60rem;
+  width: 50rem;
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.section-popup:target .section-popup-container {
+  opacity: 1;
+  visibility: visible;
+}
+
+.section-popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-popup:link,
+.close-popup:visited {
+  text-decoration: none;
+  color: #b3b3d9;
+  font-weight: 600;
+  font-size: 3rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.popup-text-container {
+  width: 80%;
+  height: 80%;
+}
+
+.popup-heading {
+  color: #343a40;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.75px;
+  margin-bottom: 0.5rem;
+}
+
+.popup-heading-sub {
+  width: 90%;
+  color: #868e96;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.popup-input {
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  height: 5rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.popup-input::placeholder {
+  font-size: 1.6rem;
+  color: #ced4da;
+  font-weight: 500;
+}
+
+.popup-btn.btn {
+  width: 100%;
+  background-color: #6666b3;
+  text-align: center;
+  color: #fff;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.popup-btn:hover {
+  background-color: #333399;
+}
+
+.more-sign-methods {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.dash {
+  height: 2px;
+  width: 10rem;
+  background-color: #dee2e6;
+}
+
+.more-sign-method-text {
+  color: #868e96;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.more-sign-method-img-box {
+  display: flex;
+  text-align: center;
+  gap: 5rem;
+  margin-bottom: 9rem;
+}
+
+.more-sign-method-img {
+  height: 4.5rem;
+}
+
+.google-logo {
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+}
+
+.terms {
+  font-size: 1.4rem;
+  color: #868e96;
+}
+
+.terms a:link,
+.terms a:visited {
+  color: inherit;
+}
+
+.terms a:hover,
+.terms a:active {
+  color: #000080;
 }
