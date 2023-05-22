@@ -251,6 +251,25 @@
 }
 
 @media (max-width: 37em) {
+  body .header {
+    position: relative;
+  }
+
+  .header-container .menu-icon,
+  .header-container .close-icon {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    font-size: 4rem;
+    background-color: #cccce6;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    border-radius: 8px;
+  }
+  .main .section-hero {
+    padding-top: 0;
+  }
   .section-hero .itinerary-box {
     max-width: 30rem;
     column-gap: 2rem;
@@ -279,6 +298,13 @@
 
   .section-feature-in-how .how {
     width: 80%;
+  }
+
+  .how-main .icon {
+    margin-bottom: 2rem;
+    height: 4rem;
+    width: 4rem;
+    padding: 1.5rem;
   }
 
   .section-feature-in-how .feature-in-logo img {
@@ -368,6 +394,8 @@
 
   .section-footer .footer-grid {
     grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 4rem;
   }
 
   .contact-box .footer-logo-box {
@@ -384,5 +412,36 @@
 
   .footer-grid .footer-list-box {
     font-size: 1.7rem;
+  }
+
+  .section-popup .section-popup-container {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 31.5em) {
+  .section-popup .section-popup-container {
+    border-radius: 0;
+  }
+  .more-sign-methods .more-sign-method-text {
+    font-size: 1rem;
+  }
+
+  .more-sign-methods .dash {
+    width: 8rem;
+  }
+
+  .more-sign-method-img-box .more-sign-method-img {
+    height: 3rem;
+  }
+
+  .popup-text-container .terms {
+    font-size: 1rem;
+  }
+
+  .nav-list li {
+    font-size: 1.5rem;
   }
 }

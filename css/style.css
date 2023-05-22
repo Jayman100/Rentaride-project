@@ -15,6 +15,9 @@
   justify-content: space-between;
 }
 
+.logo-box span {
+  color: #000080;
+}
 .nav-list {
   list-style: none;
   display: flex;
@@ -830,10 +833,10 @@
   color: #fff;
 }
 
-.footer-logo-box {
+.logo-box {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-address {
@@ -920,7 +923,7 @@
 }
 
 .section-popup-container {
-  height: 60rem;
+  padding: 4rem 0;
   width: 50rem;
   background-color: #fff;
   border-radius: 12px;
@@ -956,6 +959,8 @@
 .popup-text-container {
   width: 80%;
   height: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 .popup-heading {
@@ -1023,12 +1028,13 @@
   color: #868e96;
   font-weight: 500;
   font-size: 1.6rem;
+  text-align: center;
 }
 
 .more-sign-method-img-box {
   display: flex;
   text-align: center;
-  gap: 5rem;
+  justify-content: space-between;
   margin-bottom: 9rem;
 }
 
@@ -1044,6 +1050,7 @@
 .terms {
   font-size: 1.4rem;
   color: #868e96;
+  margin-top: auto;
 }
 
 .terms a:link,
